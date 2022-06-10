@@ -1,0 +1,49 @@
+body {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: 'DM Sans', 'sans-serif';
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  display: block;
+}
+
+button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}

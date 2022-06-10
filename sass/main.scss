@@ -1,0 +1,21 @@
+// @import './utils/variables';
+// @import './utils/extend';
+// @import './utils/mixins';
+@import './base/reset';
+
+@import './components/conteiner';
+@import './components/section';
+@import './components/visually-hidden';
+@import './components/current';
+@import './components/logo';
+@import './components/is-hidden';
+
+// @import './layout/header';
+// @import './layout/main/hero';
+// @import './layout/main/features';
+// @import './layout/main/occupation';
+// @import './layout/main/team';
+// @import './layout/main/company';
+// @import './layout/footer';
+// @import './layout/backdrop';
+@import './layout/main/about';

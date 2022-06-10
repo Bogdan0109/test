@@ -1,0 +1,133 @@
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__title {
+  margin-bottom: 30px;
+  @include font(700, 28px, 1.18);
+
+  text-align: center;
+
+  color: var(--title-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    @include font(700, 36px, 1.17);
+  }
+}
+
+.person-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.person-list__item {
+  text-align: center;
+
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.person-list__div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.person-list__name {
+  margin-bottom: 10px;
+
+  @include font(500, 16px, 1.19);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.19;
+
+  color: var(--title-color);
+}
+
+.person-list__text {
+  margin-bottom: 16px;
+
+  @include font(400, 16px, 1.19);
+  // font-size: 16px;
+  // line-height: 1.19;
+
+  color: #757575;
+}
+
+.person-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-soc-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.person-soc-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #afb1b8;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+  }
+}
+
+.person-soc-list__link:hover .person-soc-list__icon,
+.person-soc-list__link:focus .person-soc-list__icon {
+  fill: #ffffff;
+}
