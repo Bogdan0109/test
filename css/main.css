@@ -118,7 +118,6 @@ img {
   margin-left: auto;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-image: url(../images/milk.png);
   background-position: 50% 71%;
   background-repeat: no-repeat;
   background-color: #fff5f6;
@@ -295,21 +294,19 @@ img {
 }
 
 .about-dropdown {
-  display: block;
-  transition: display 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.about-dropdown.is-hidden {
-  display: none;
+  overflow: hidden;
 }
 
 .about-content {
+  left: 0;
+  top: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(0);
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
 }
 .about-dropdown.is-hidden .about-content {
-  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .about-dropdown__text:first-child {
