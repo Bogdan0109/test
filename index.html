@@ -93,14 +93,27 @@
                 volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
               </p>
               <p class="about__bottom-text">Aliquam erat volutpat. Aenean accumsan.</p>
-              <button class="about__btn btn" type="button">Read more</button>
+              <button class="about__btn btn" type="button" data-modal-open>Read more</button>
+              <div class="about-dropdown is-hidden" data-modal>
+                <div class="about-content">
+                  <p class="about-dropdown__text">
+                    Ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat repellendus
+                    tenetur fuga praesentium rem quia itaque, excepturi nemo, at possimus
+                    voluptatem! Illo pariatur odio quis velit earum quasi quo.
+                  </p>
+                  <p class="about-dropdown__text">
+                    Dolor sit amet, consectetur adipisicing elit. Neque, vel eum? Iure quaerat
+                    doloremque ipsum nam, rerum ab vel id?
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg class="modal__close-icon" width="11" height="11">
@@ -164,9 +177,10 @@
           <button class="services__send-button" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/menu.js"></script>
   </body>
 </html>
